@@ -5,6 +5,10 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 动态配置
+ * @author gc
+ */
 @RestController
 @RequestMapping("/config")
 @RefreshScope
