@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: nacos-service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+  hystrix:
+    enabled: false
+
+logging:
+  level:
+    com.zy.cloud.nacos.service: debug
